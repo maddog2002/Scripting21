@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flexbox</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Akronim&family=Roboto:ital,wght@0,100;0,400;1,700&display=swap" rel="stylesheet">
+
+	<!--tag to check the device size, needed for media queries-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+				
+		body{
+			font-family: 'Roboto', sans-serif;
+			margin:0;
+		}
+		header{
+		 	background-color:#020202; 
+			/*adding a background image*/
+			background-image: url("images/forest.jpg");
+			/*sets background image to fill available space*/
+			background-size:cover;
+			/*sticks it in its place*/
+			background-attachment:fixed;
+			/*positions the image in the div*/
+			background-position:center;
+				
+			color: orange;
+			height:50vh;
+			display:flex;
+			align-items:center;
+			padding-left:20px
+/*			justify-content:center;*/
+			
+		}
+		header h1{
+			font-size: 50px;
+			font-family: 'Akronim', cursive;
+		}
+		.flex-container{
+			display:flex;
+			align-items:stretch;
+			}
+		
+		.flex-container div{
+			background-color:antiquewhite;
+			margin:10px;
+			padding:10px;
+		}
+		
+		#item1{
+			flex:25%
+		}
+		
+		#item1 img{
+			width:100%
+		}
+		
+		#item2{
+			flex:50%
+		}
+		
+		#item3{
+			flex:25%
+		}
+		
+		/**Css for buttons**/
+		.btn{
+		 background-color: #BF4708;
+			border:none;
+			padding:15px 32px;
+			font-size: 16px;
+			
+		}
+		/*hover state*/
+		.btn:hover{
+			background-color: #D38420;
+			color: white;
+			width:100%;
+		}
+		
+		#item4{
+			flex:50%
+		}
+		
+		#item5{
+			flex:50%
+		}
+		
+		#item6{
+			flex:25%;
+			/*over write the inherited style*/
+			background-color: transparent;
+		}
+	
+		#item7{
+			flex:50%;
+			background-color:transparent;
+		}
+			
+		#item8{
+			flex:25%;
+			background-color:transparent;
+		}
+		
+		footer{
+			background-color:black;
+			padding:50px 0px;
+			color:orange;
+			text-align:center;
+			font-weight:bold;
+		}
+		/********media query to change the style for phones********/
+		
+			    /* Responsive layout - makes a one column layout instead of a two-column layout */
+        @media (max-width: 800px) {
+          .flex-container {
+            flex-direction: column;
+			}
+		
+	</style>
+</head>
+
+<body>
+	
+	<header>
+		
+		<h1>The Page Heading</h1>
+	</header>
+	<!--------row 1------>
+	<div class="flex-container">
+		<div id="item1">
+			<img src="images/Princess.jpg" alt="Halloween princess">
+			 
+	</div>
+		<div id="item2">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius voluptatum voluptas suscipit magni maxime dicta veniam exercitationem! Ad, sapiente aut! Quidem eum aut dignissimos mollitia voluptatibus, beatae odio omnis impedit est labore nesciunt voluptas cumque assumenda. Dolore, provident praesentium saepe itaque est aut nam asperiores veniam laborum libero maxime porro nulla eum voluptatem sint veritatis rem, sequi delectus! Voluptatem eveniet impedit doloremque, nemo quisquam eius similique repudiandae laboriosam earum illo. Illo magnam velit optio commodi, laborum repellendus provident dolorum ducimus aspernatur ut accusamus eum minima dignissimos, labore molestias impedit alias hic totam praesentium omnis vitae deserunt nulla quibusdam facilis. Sequi.</p>
+		</div>
+		<div id="item3">
+		<!--add some buttons-->
+			<p><button class="btn">Click Me!</button></p>
+			<p><button class="btn">Click Me Too!</button></p>
+		</div>
+	</div> 
+	
+	
+	
+	<div class="flex-container">
+		<div id="item4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores non excepturi magnam odit voluptatem eum et impedit atque, quibusdam tempora accusantium qui ex! Fuga, cum saepe voluptas quaerat et ipsa accusantium culpa, eligendi quam asperiores delectus, odit officia commodi nobis fugit exercitationem distinctio accusamus at sed iusto. Fugit, eos iusto.</p>
+		</div>
+		<div id="item5"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium necessitatibus temporibus illum iure nulla cupiditate aliquid reprehenderit enim deserunt iste explicabo fuga distinctio accusamus magni quis laudantium ipsum, nihil qui officia voluptatum aperiam. Maiores laborum nulla in esse alias repudiandae dignissimos quas hic minima distinctio, voluptatem libero necessitatibus obcaecati aliquam!</p></div>
+	</div>
+	
+	<footer>
+		<div class="flex-container">
+		<div id="item6"></div>
+		<div id="item7">
+			<p>Created by Madi Cooper</p>
+			<p>&copy; 2021</p>
+			</div>
+		<div id="item8"></div>
+	</div> 
+	</footer>
+	
+</body>
+</html>
