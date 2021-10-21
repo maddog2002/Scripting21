@@ -1,10 +1,201 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <title>Bio Page Creation</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Akronim&family=Roboto:ital,wght@0,100;0,400;1,700&display=swap" rel="stylesheet">
+
+	<!--tag to check the device size, needed for media queries-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+				
+		body{
+			font-family: 'Playfair Display', serif;
+			margin:0;
+		}
+		header{
+		 	border: 2px solid black;
+  			padding: 25px;
+			background-color:#020202; 
+			/*adding a background image*/
+			background-image: url("IMG_2162.JPG"); 
+			background-repeat: no-repeat;
+ 			background-size: 25% 25%;
+			/*sets background image to fill available space*/
+			background-size:cover;
+			/*sticks it in its place*/
+			background-attachment:fixed;
+			/*positions the image in the div*/
+			background-position:center;
+				
+			color:purple;
+			height:50vh;
+			display:flex;
+			align-items:center;
+			padding-left:20px
+/*			justify-content:center;*/
+			
+		}
+		header h1{
+			font-size: 50px;
+			font-family: 'Akronim', cursive;
+		}
+		.flex-container{
+			display:flex;
+			align-items:stretch;
+			}
+		
+		.flex-container div{
+			background-color:antiquewhite;
+			margin:10px;
+			padding:10px;
+		}
+		
+		#item1{
+			flex:50%
+		}
+		
+		#item1 img{
+			width:100%
+		}
+		
+		#item2{
+			flex:50%
+		}
+		
+		#item3{
+			flex:25%; 
+		}
+		
+		/**Css for buttons**/
+		.btn{
+		 background-color: #BE9ACB;
+			border:none;
+			padding:15px 32px;
+			font-size: 16px;
+			
+		}
+		/*hover state*/
+		.btn:hover{
+			background-color: #D38420;
+			color: white;
+		}
+		
+		#item4{
+			flex:25%
+		}
+		
+		#item11{
+			flex:25%
+		}
+		#item11 img{
+			width: 100%
+		}
+		#item5{
+			flex:25%
+		}
+		#item9{
+			flex:25%
+		}
+		#item6{
+			flex:25%;
+			/*over write the inherited style*/
+			background-color: transparent;
+		}
+	
+		#item7{
+			flex:50%;
+			background-color:transparent;
+		}
+			
+		#item8{
+			flex:25%;
+			background-color:transparent;
+		}
+		#item10{flex:50%;
+		}
+		#item10 img{
+			width: 100%
+		}
+		#item12{flex:50%;
+		
+		}
+		
+		footer{
+			background-color:black;
+			padding:50px 0px;
+			color:orange;
+			text-align:center;
+			font-weight:bold;
+		}
+		/********media query to change the style for phones********/
+		
+			    /* Responsive layout - makes a one column layout instead of a two-column layout */
+        @media (max-width: 800px) {
+          .flex-container {
+            flex-direction: column;
+			}
+		
+	</style>
 </head>
 
 <body>
+	
+	<header>
+		
+		<h1>Madison Cooper</h1>
+	</header>
+	<!--------row 1------>
+	<div class="flex-container">
+	<div id="item3">
+		<!--add some buttons-->
+			<p><button class="btn">Site Construction</button>
+			<button class="btn">Basic Interactions</button>
+			<button class="btn">Object Properties</button></p>
+		</div>
+	</div>
+	<div class="flex-container">	 
+		<div id="item2"><h3>Life at a glance</h3>
+			<p>Madison Cooper is a first-year student at <a href="https://lethbridgecollege.ca/" target="_blank">Lethbridge College</a> in the Multimedia Production program, focusing on animation, graphic design and scripting. She has a deep interest in music production and the way music can influence and change a person. She spends more than half her day listening to music and discovering ways to influence her friends and family through It. She wants to create a piece for her uncle who lost his daughter in early 2020. She wants to use what she learns about animation and graphic design to create an animatic or animated family picture for her uncle with his daughter in it. She grew up in<a href="https://www.highprairie.ca/" target="_blank"> High Prairie, Alberta</a>, which didn’t have a drama program, but she has a passion for the fine arts and continues to grow her passion through other forms of fine arts.</p>
+		</div>
+		<div id="item1">
+			<img src="Spotify.jpg" alt="Spotify discovery and release logos">
+	</div>
+	</div>
+	
+	
+	
+	
+	<div class="flex-container">
+		<div id="item4"><h3>Hobbies/School</h3><p>She has played the saxophone for eight years; and she has had her photography featured in an art show where she received several compliments. She is a very focused student with a great work ethic, and she loves to bring new ideas to her work. She has also been trained in ordering dairy, frozen, grocery, and select products for store displays, etc. At <a href="https://www.freson.com/" target="_blank">Freson Bros.</a>  In High Prairie, Alberta</p>
+		</div>
+		<div id="item11">
+		<img src="Saxophone.jpg" alt="Saxophone laying on the floor">
+		</div>
+		<div id="item5"><h3>Family</h3><p>She has three younger brother’s Clayton: 18 years old, Malcolm: 15 years old, and Spencer: 14 years old. she is quite close to her 18-year-old brother, they worked, hung out, and trust each other the most. Living in a large family has its challenges, but this has helped Madison to become independent and self-sufficient.</p></div>
+ <div id="item9"><h3>Writing</h3><p>She enjoys writing as well, she has started writing a book called: Hades’ daughter. It’s set-in modern-day times and features kids many different locations in this world and the Greek world. It also features kids of the gods. Which includes her four older brothers. </p></div>
+	</div>
+	
+	<div class="flex-container">
+	<div id="item10">
+		<img src="Hades_Daughter.jpg" alt="Hades daughter sourounded by burning photos">
+		</div>
+	<div id="item12"><h3>See what I have been listening to</h3><iframe src="https://open.spotify.com/embed/playlist/4fbpjfoCwhwJqUNGdxaGz7?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div> </div>
+	
+	<footer>
+		<div class="flex-container">
+		<div id="item6"></div>
+		<div id="item7">
+			<p>Created by Madi Cooper</p>
+			<p>&copy; 2021</p>
+			</div>
+		<div id="item8"></div>
+	</div> 
+	</footer>
+	
 </body>
 </html>
