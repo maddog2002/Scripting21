@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	/*Remove default spacing*/
+	margin: 0; 
+	padding: 0; 
+	
+	/*set a background colour*/
+	background:#622819; 
+	
+	/*set a default font family*/
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+h1{
+	/*set a font for headings*/
+	font-family:'Mochiy Pop One', sans-serif;; 
+	font-size: 2.5em;/*1 em = 16 px(default size) so 2.5em= 40px*/
+}
+
+
+#header{
+	margin: 0;
+	/*space inside the div*/
+	padding: 100px;
+	
+	/*set a background image*/
+	background-image: url("../images/HP_Sign.jpg");
+	/*set the background image to cover the whole div*/
+	background-size: cover;
+	background-position: center;
+}
+
+#subHead{
+	/*space inside the div*/
+	padding: 100px;
+	
+	/*set margin top and bottom to 0 and auto centered*/
+	margin: 0 auto;
+	/*set a background image*/
+	background-image: url("../images/Forest_JackPines.jpeg");
+	/*set the background image to cover the whole div*/
+	background-size: cover;
+	/*make it so the background image doesn't scroll with the page*/
+	background-attachment: fixed;
+	/*set css to look at entire element (padding included) to set size*/
+	box-sizing: border-box;
+	/*set a maximum width of 960px*/
+	max-width: 960px;
+	
+	color: aliceblue;
+}
+
+.sect{
+	
+	background: #FFFFFF; 
+	margin: 0 auto; 
+	padding: 20px; 
+	
+	/*set css to look at entire element (padding included) to set size*/
+	box-sizing: border-box;
+	/*set a maximum width of 960px*/
+	max-width: 960px;
+}
+
+/*psuedo-classes for the links (with rollovers)*/
+a:link, a:visited{
+	color:#C34A36; 
+	text-decoration: none;
+}
+a:hover{
+	color:red; 
+	text-decoration: underline;
+}
+a:active{
+	color: orangered;
+}
+
+/*------------------------navBar -------------------*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+ position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:grey;
+}
+nav li a:link, nav li a:visited {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+
+/* Add a gray right border to all list items, except the last item (last-child) */
+li {
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+ul {
+ 
+}
+/*----------------------------image gallery-----------------*/
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #F80206;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.clearIt{
+	clear:both;
+	padding-top:50px;
+}
+
+/*---------------------------Tables------------------------*/
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+/*---------------------------Footer------------------------*/
+footer {
+text-align: center;
+border-top:dashed thin gray;
+margin:5px;
+font-style:italic;
+}
