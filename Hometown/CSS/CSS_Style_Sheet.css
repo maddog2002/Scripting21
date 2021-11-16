@@ -1,4 +1,4 @@
-@charset "UTF-8";
+ @charset "UTF-8";
 /* CSS Document */
 
 body{
@@ -62,7 +62,8 @@ h1{
 	box-sizing: border-box;
 	/*set a maximum width of 960px*/
 	max-width: 960px;
-}
+	
+  } 
 
 /*psuedo-classes for the links (with rollovers)*/
 a:link, a:visited{
