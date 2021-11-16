@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Intro to Javascript</title>
+
+<style>
+	#box1, #box2, #box3{
+		border:thin solid black;
+		height:200px;
+		width:400px;
+	}
+	
+</style>	
+	
+	
+	
+</head>
+	
+<body>
+	
+	<h1>Learning JavaScript</h1>
+	
+	<!----------Content divs we will manipulate with JS------------->
+	<div id="box1"></div>
+	<div id="box2"></div>
+	<div id="box3"></div>
+	
+<!----------ALL JavaScript MUST go inside of scrit tags at the end of the body---------->
+	
+	
+<script>	
+
+/****************step 1- Simple Variables********/	
+var num1=5;	
+var num2=4;
+console.log("My numer is "+num1);
+
+var score=num1+num2;
+console.log("Your Score is "+score);
+	
+/******************Step2- Pointer to something on the page, and put our score varible into it*/
+
+//target a div on the page
+var box1 = document.getElementById('box1');	
+
+//change the HTML within that div to our score
+box1.innerHTML = score;
+/*******************Pointer, fill it with content, change the style*************/
+	
+var box2 = document.getElementById('box2');
+	
+//put some text in there
+box2.innerHTML="I love Javascript!";
+
+//change the css of box2
+box2.style.color="#B4B462";
+box2.style.fontSize="24pt";
+box2.style.background="#5E5E8B";
+	
+/*****************Step three - Simple Logic*****/
+
+var box3=document.getElementById('box3');	
+
+//a single = assigns 	
+var name = "Madi";
+
+//double equal sign == testing to see if two things equal
+if(name=="Madi"){
+   box3.innerHTML="I think you are the best!"
+   }else{
+	   box3.innerHTML="You're pretty cool but not as cool as Unicorns. sniff. sniff.";
+   }
+
+   
+</script>	
+</body>
+</html>
