@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mad Libs</title>
+
+<style>
+	body{background-color:#843838; color: white}
+	.red{color:#2F005C;}
+</style>
+</head>
+	
+<body>
+	
+<h1>Kidnapping MadLib</h1>	
+	
+	<p>Fill out these questions to generate your own silly mad libs story instantly online! This MadLib has many different categories, so it may be difficult for younger audiences. (Hint: A <b>Verb</b> is an action. A <b>Noun</b> is a person/place/thing. An <b>Adjective</b> describes a person/place/thing.)</p>
+	
+	<p>Choose your favorite book genre:</p>
+	
+	<form action="javascript:myStory();">
+	
+  <input type="radio" id="html" name="fav_language" value="Adventure">
+  <label for="html">Adventure</label><br>
+		
+  <input type="radio" id="css" name="fav_language" value="Horror">
+  <label for="css">Horror</label><br>
+		
+  <input type="radio" id="Comic Book/Graphic Novel" name="fav_language" value="JavaScript">
+  <label for="javascript">Comic Book/Graphic Novel</label><br>
+	
+  <input type="radio" id="Fantasy" name="fav_language" value="fantasy">
+  <label for="fantasy">Fantasy</label><br>
+	
+  <input type="radio" id="Historical Fiction" name="fav_language" value="Historical Fiction">
+  <label for="Historical Fiction">Historical Fiction</label><br>
+		
+  <input type="radio" id=" Mystery" name="fav_language" value=" Mystery">
+  <label for=" Mystery"> Mystery</label>	
+	<p>
+		<label for="adj">Adjective:</label>
+		<input type="text" id="adj" name="adj" autofocus>
+	</p>
+	
+	<p>
+		<label for="adj2">Adjective:</label>
+		<input type="text" id="adj2" name="adj2" autofocus>
+	</p>
+		
+	<p>
+		<label for="adj3">Adjective:</label>
+		<input type="text" id="adj3" name="adj3" autofocus>
+	</p>
+		
+	<p>
+		<label for="adj4">Adjective:</label>
+		<input type="text" id="adj4" name="adj4" autofocus>
+	</p>
+		
+	<p>
+		<label for="adj5">Adjective:</label>
+		<input type="text" id="adj5" name="adj5" autofocus>
+	</p>
+		
+	<p>
+		<label for="adj6">Adjective:</label>
+		<input type="text" id="adj6" name="adj6" autofocus>
+	</p>
+		
+	<p>
+		<label for="adj7">Adjective:</label>
+		<input type="text" id="adj7" name="adj7" autofocus>
+	</p>
+		
+	<p>
+		<label for="adj8">Adjective:</label>
+		<input type="text" id="adj8" name="adj8" autofocus>
+	</p>
+		
+	<p>
+		<label for="adj9">Adjective:</label>
+		<input type="text" id="adj9" name="adj9" autofocus>
+	</p>
+		
+	<p>
+		<label for="adj10">Adjective:</label>
+		<input type="text" id="adj10" name="adj10" autofocus>
+	</p>	
+		
+	<p>
+		<label for="non">Noun:</label>
+		<input type="text" id="non" name="non" autofocus>
+	</p>	
+		<p>
+		<label for="non2">Noun:</label>
+		<input type="text" id="non2" name="non2" autofocus>
+	</p>
+		
+	<p>
+		<label for="non3">Noun:</label>
+		<input type="text" id="non3" name="non3" autofocus>
+	</p>
+		
+	<p>
+		<label for="non4">Noun:</label>
+		<input type="text" id="non4" name="non4" autofocus>
+	</p>	
+		
+	<p>
+		<label for="pla">Place:</label>
+		<input type="text" id="pla" name="pla" autofocus>
+	</p>
+		
+	<p>
+		<label for="ver">Verb:</label>
+		<input type="text" id="ver" name="ver" autofocus>
+	</p>
+		
+	<p>
+		<label for="ver2">Verb:</label>
+		<input type="text" id="ver2" name="ver2" autofocus>
+	</p>
+		
+	<p>
+		<label for="ver3">Verb:</label>
+		<input type="text" id="ver3" name="ver3" autofocus>
+	</p>
+		
+	<p>
+		<label for="ver4">Verb:</label>
+		<input type="text" id="ver4" name="ver4" autofocus>
+	</p>
+		
+	<p>
+		<label for="ver5">Verb:</label>
+		<input type="text" id="ver5" name="ver5" autofocus>
+	</p>
+		
+	<p>
+		<label for="ver6">Verb:</label>
+		<input type="text" id="ver6" name="ver6" autofocus>
+	</p>	
+		
+	<p>
+		<label for="tani">Three animals:</label>
+		<input type="text" id="tani" name="tani" autofocus>
+	</p>	
+		
+	<p>
+		<label for="bp">Body Part:</label>
+		<input type="text" id="bp" name="bp" autofocus>
+	</p>	
+		
+	<p>
+		<label for="bf">Body Fluid:</label>
+		<input type="text" id="bf" name="bf" autofocus>
+	</p>	
+		
+	<p>
+		<label for="cw">Curse Word:</label>
+		<input type="text" id="cw" name="cw" autofocus>
+	</p>	
+		
+	<p>
+		<label for="eily">Emotion ending in ily:</label>
+		<input type="text" id="eily" name="eily" autofocus>
+	</p>	
+		
+	<p>
+		<label for="aofc">Article of clothing:</label>
+		<input type="text" id="aofc" name="aofc" autofocus>
+	</p>	
+	
+	<p>
+		<label for="mon">Monster:</label>
+		<input type="text" id="mon" name="mon" autofocus>
+	</p>	
+		
+	<p>
+		<label for="mon2">Monster:</label>
+		<input type="text" id="mon2" name="mon2" autofocus>
+	</p>
+		
+	<p>
+		<label for="mon3">Monster:</label>
+		<input type="text" id="mon3" name="mon3" autofocus>
+	</p>
+		
+	<p>
+		<label for="mon4">Monster:</label>
+		<input type="text" id="mon4" name="mon4" autofocus>
+	</p>	
+		
+	<p>
+		<label for="emo">Emotion:</label>
+		<input type="text" id="emo" name="emo" autofocus>
+	</p>
+		
+	<p>
+		<label for="emo2">Emotion:</label>
+		<input type="text" id="emo2" name="emo2" autofocus>
+	</p>	
+		
+	<p>
+		<label for="nam">Name:</label>
+		<input type="text" id="nam" name="nam" autofocus>
+	</p>	
+	
+		<p>
+		<label for="num">Number:</label>
+		<input type="text" id="num" name="num" autofocus>
+	</p>
+		
+	<p>
+		<label for="num2">Number:</label>
+		<input type="text" id="num2" name="num2" autofocus>
+	</p>
+	
+	<p>
+		<label for="num3">Number:</label>
+		<input type="text" id="num3" name="num3" autofocus>
+	</p>
+	
+	
+	<p>
+		<label for="num4">Number:</label>
+		<input type="text" id="num4" name="num4" autofocus>
+	</p>
+		
+		
+	<p>
+		<label for="oani">one of three animals you chose:</label>
+		<input type="text" id="oani" name="oani" autofocus>
+	</p>	
+	
+	<p>
+		<label for="ute">Utensil:</label>
+		<input type="text" id="ute" name="ute" autofocus>
+	</p>
+		
+	<p>
+		<label for="ves">Verb ending in S:</label>
+		<input type="text" id="ves" name="ves" autofocus>
+	</p>	
+		
+	<p>
+		<label for="adv">Adverb:</label>
+		<input type="text" id="adv" name="adv" autofocus>
+	</p>	
+		
+	<p>
+		<label for="adv2">Adverb:</label>
+		<input type="text" id="adv2" name="adv2" autofocus>
+	</p>					
+	
+	<p><input type="submit" value="Generate Story"></p>	
+		
+	</form>
+	<div id="output"></div>
+	
+	<p>A time-based greeting:</p>
+
+	<p id="demo"></p>
+
+	<script>
+		function myStory(){
+			console.log("It's Working");
+			
+			var ad1=document.getElementById('adj').value;
+			var ad2=document.getElementById('adj2').value;
+			var ad3=document.getElementById('adj3').value;
+			var ad4=document.getElementById('adj4').value;
+			var ad5=document.getElementById('adj5').value;
+			var ad6=document.getElementById('adj6').value;
+			var ad7=document.getElementById('adj7').value;
+			var ad8=document.getElementById('adj8').value;
+			var ad9=document.getElementById('adj9').value;
+			var ad10=document.getElementById('adj10').value;
+			var non1=document.getElementById('non').value;
+			var non2=document.getElementById('non2').value;
+			var non3=document.getElementById('non3').value;
+			var non4=document.getElementById('non4').value;
+			var pla1=document.getElementById('pla').value;
+			var ver1=document.getElementById('ver').value;
+			var ver2=document.getElementById('ver2').value;
+			var ver3=document.getElementById('ver3').value;
+			var ver4=document.getElementById('ver4').value;
+			var ver5=document.getElementById('ver5').value;
+			var ver6=document.getElementById('ver6').value;
+			var tani1=document.getElementById('tani').value;
+			var bp1=document.getElementById('bp').value;
+			var bf1=document.getElementById('bf').value;
+			var cw1=document.getElementById('cw').value;
+			var eily1=document.getElementById('eily').value;
+			var aofc1=document.getElementById('aofc').value;
+			var mon1=document.getElementById('mon').value;
+			var mon2=document.getElementById('mon2').value;
+			var mon3=document.getElementById('mon3').value;
+			var mon4=document.getElementById('mon4').value;
+			var emo1=document.getElementById('emo').value;
+			var emo2=document.getElementById('emo2').value;
+			var nam1=document.getElementById('nam').value;
+			var num1=document.getElementById('num').value;
+			var num2=document.getElementById('num2').value;
+			var num3=document.getElementById('num3').value;
+			var num4=document.getElementById('num4').value;
+			var oani1=document.getElementById('oani').value;
+			var ute1=document.getElementById('ute').value;
+			var ves1=document.getElementById('ves').value;
+			var adv1=document.getElementById('adv').value;
+			var adv2=document.getElementById('adv2').value;
+			
+			document.getElementById('output').innerHTML="<p class='red'>Once upon a time there was a "+non1+", they lived in "+pla1+", they had "+ad1+" hair. Their favorite thing to do is "+ver1+".  One day they were "+ver2+" to the "+non2+", when suddenly, they were kidnapped by the "+ad2+" "+non3+". They were taken to the "+ad3+" cliffs to a dark cave for safe keeping. When they were left alone in the cave, they looked around and saw "+tani1+", who told them how they can get out of the cave "+adv1+". They would have to go through three different gates guarded by three different monsters. So, they came up with a plan to escape. "+tani1+" directed them to a "+ad4+" passage where they could "+adv2+" escape. As they walked their "+bp1+" started to burn, as they looked at their "+bp1+" they noticed "+ad5+" "+bf1+" coming out of a deep cut and leaving a trail behind them. Oh "+cw1+" they yelled "+eily1+". They had to wrap the wound so it wouldn’t bleed so they used "+aofc1+" to apply a wrap. After the wound was taken care of, they continued to "+ver3+" until they saw a big "+mon2+" standing guard of the first gate. The "+mon2+" looked pretty "+ad6+" they were extremely "+emo1+". As they were thinking of a distraction to avoid being "+ver4+" by the "+ad7+" monster, they heard a voice scream “who dares try to cross the threshold of "+nam1+" the "+ad8+"After hearing this they came out from their hiding spot and explained how they want to leave and go back home to "+pla1+" and her "+num1+" brothers and "+num2+" sisters. The monster took "+num3+" looks at her then "+ver5+" yelling, let her through to the "+mon2+" and "+mon3+" at the other two gates. This gave them a detailed "+non4+" of the passage ahead. After they passed by all the gates and monsters, they came across the exit, but one of them would have to die and live forever as a "+mon4+" at a new gate. The "+oani1+" chooses the stay behind, so the "+nam1+" could go home. As they said goodbye and "+ver6+" away to never ever see their companion again they "+emo2+" so hard. As they approached a "+ute1+" in the road, they said goodbye and promised to see each other again in "+num4+" years. As the "+non1+" approaches her home she "+ves1+" with relief as she finds her family. Then she woke up on the "+ad9+" floor in the "+ad10+" cave.</p>";
+			}
+		
+const hour = new Date().getHours(); 
+let greeting;
+
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+document.getElementById("demo").innerHTML = greeting;
+		
+		
+	
+	</script>
+</body>
+</html>
